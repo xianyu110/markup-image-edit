@@ -15,7 +15,6 @@ export function Footer() {
       ],
     },
     {
-    {
       title: m['landing.footer.legal'](),
       links: [
         { label: m['landing.footer.privacy'](), href: '/privacy-policy' },
