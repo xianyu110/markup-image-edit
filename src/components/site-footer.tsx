@@ -27,34 +27,13 @@ export interface FooterSocial {
  * to /partners once the list grows.
  */
 export const DIRECTORY_BADGES: readonly { href: string; src: string; alt: string; width: number; height: number }[] = [
- {
- href: 'https://findaifor.me/?utm_source=markup-image-edit&utm_medium=badge&utm_campaign=footer',
- src: 'https://findaifor.me/badge/featured.svg',
- alt: 'Featured on FindAIForMe',
- width: 200,
- height: 54,
- },
- {
- href: 'https://showmebest.ai',
- src: 'https://showmebest.ai/badge/feature-badge-dark.webp',
- alt: 'Featured on ShowMeBestAI',
- width: 147,
- height: 40,
- },
- {
- href: 'https://twelve.tools',
- src: '/badges/twelve-tools.svg',
- alt: 'Featured on Twelve Tools',
- width: 119,
- height: 32,
- },
- {
- href: 'https://www.toolpilot.ai',
- src: '/badges/toolpilot.png',
- alt: 'Featured on ToolPilot.ai',
- width: 140,
- height: 31,
- },
+  {
+    href: 'https://findaifor.me/?utm_source=markup-image-edit&utm_medium=badge&utm_campaign=footer',
+    src: 'https://findaifor.me/badge/featured.svg',
+    alt: 'Featured on FindAIForMe',
+    width: 200,
+    height: 54,
+  },
 ];
 
 export const POWERED_BY = {
