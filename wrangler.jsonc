@@ -1,0 +1,30 @@
+// Copy your own Cloudflare D1 id into the placeholder before deploying.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "markup-image-edit",
+  "compatibility_date": "2026-10-09",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "vars": {
+    "DATABASE_PROVIDER": "d1",
+    "VITE_APP_URL": "https://your-worker.your-subdomain.workers.dev",
+    "APP_URL": "https://your-worker.your-subdomain.workers.dev",
+    "AUTH_URL": "https://your-worker.your-subdomain.workers.dev",
+    "VITE_APP_NAME": "Markup Image Edit",
+    "VITE_APP_DESCRIPTION": "Circle an area, describe the change, and edit only that part of the image.",
+    "AUTH_TRUSTED_ORIGINS": "https://your-worker.your-subdomain.workers.dev",
+    "STRIPE_APP_METADATA": "markup-image-edit",
+    "SUPER_ADMIN_EMAILS": "admin@example.com",
+    "VITE_DEFAULT_LOCALE": "en"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "your-markup-image-edit-db",
+      "database_id": "YOUR_D1_DATABASE_ID",
+      "migrations_dir": "drizzle",
+      "migrations_table": "mie_d1_migrations"
+    }
+  ]
+}
